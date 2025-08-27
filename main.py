@@ -54,17 +54,27 @@ if not "initialized" in st.session_state:
 
 
 ############################################################
-# 4. 初期表示
+# 4. 初期表示 メイン
 ############################################################
 # タイトル表示
 cn.display_app_title()
+cn.display_main_ai_message()
+# # モード表示
+# cn.display_select_mode()
 
-# モード表示
-cn.display_select_mode()
+# # AIメッセージの初期表示
+# cn.display_initial_ai_message()
 
-# AIメッセージの初期表示
-cn.display_initial_ai_message()
+############################################################
+# 4. 初期表示　サイドバー
+############################################################
 
+with st.sidebar:
+    st.markdown("### 利用目的")
+    cn.display_select_mode()
+    st.markdown("")  # 1行空ける
+    st.divider()     # 灰色の区切り線
+    cn.display_initial_ai_message()
 
 ############################################################
 # 5. 会話ログの表示

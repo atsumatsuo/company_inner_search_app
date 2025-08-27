@@ -26,6 +26,8 @@ WARNING_ICON = ":material/warning:"
 ERROR_ICON = ":material/error:"
 SPINNER_TEXT = "回答生成中..."
 
+MESSAGE_INITIAL = "こんにちは！私は社内文書の情報をもとに回答する生成AIチャットボットです。上記で利用目的を選択し、画面下部のチャット欄からメッセージを送信してください。"
+CAUTION_MESSAGE = "⚠︎具体的に入力したほうが期待通りの回答を得やすいです。"
 
 # ==========================================
 # ログ出力系
@@ -55,6 +57,8 @@ SUPPORTED_EXTENSIONS = {
 WEB_URL_LOAD_TARGETS = [
     "https://generative-ai.web-camp.io/"
 ]
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 50
 
 
 # ==========================================
